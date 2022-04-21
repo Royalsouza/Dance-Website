@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+     include  ../static/style.css
+
+block content
+     section#introSection 
+       div Welcome to Roy's Dance Acadamy
+       div.small Express Yourself Through Movement
+
+
+     section#missionSection 
+       h2 Our Mission
+       div.card 
+         h3 Dance the way you like 
+         div.card-box 
+           div.card-img 
+              img(src="/static/2.jpg")
+         div.card-content 
+          p Dance is the hidden language of the soul
+       div.card 
+         h3 Train to Perfection
+          div.card-box 
+           div.card-img 
+              img(src="/static/3.jpg")
+         div.card-content 
+          p Dance is the timeless interpretation of life
+       div.card 
+         h3 Expert Teaching
+          div.card-box 
+           div.card-img 
+              img(src="/static/8.jpg")
+         div.card-content 
+          p Life is the dancer and you are the dance
+
+
+     section#sponsorsSection
+       h2 Our Sponsors
+       div#sponsors 
+       img(src="/static/logo1.jpg",alt="sponsor image",class="spimg")
+       img(src="/static/logo2.jpg",alt="sponsor image",class="spimg")
+       img(src="/static/logo3.jpg",alt="sponsor image",class="spimg")
+       img(src="/static/logo4.jpg",alt="sponsor image",class="spimg")
